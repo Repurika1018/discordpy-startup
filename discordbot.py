@@ -25,6 +25,12 @@ async def ping(ctx):
 async def test(ctx, arg):
     await ctx.send(arg)
 
-
+@bot.command()
+async def neko(ctx):
+    await ctx.send('にゃあ')
+    
+@bot.command()
+async def tundere(ctx):
+    await ctx.send('べっ、別に兄さんのことなんか好きじゃないんだからねっ!!!')
 
 bot.run(token)
