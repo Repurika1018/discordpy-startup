@@ -20,6 +20,18 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
+    
+    
+    
+    
+ client = dicord.Client()
+
+@client.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if message.content == '/neko'
+        await message.channel.send('にゃあ')
 
 
 bot.run(token)
